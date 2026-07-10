@@ -19,11 +19,11 @@ body{
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-height: 1100px;
     background: cadetblue;
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: stretch;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
 
@@ -183,12 +183,14 @@ p{
     display: flex;
     flex-direction: row;
     margin: 0px 0;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .about .box .years{
-    min-height: 150px;
-    width: 50%;
-    grid-template-columns: 100px 1fr;
+    min-height: auto;
+    width: auto;
+    flex: 1;
 }
 
 .about .box .years h5{
